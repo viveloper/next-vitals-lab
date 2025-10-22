@@ -1,0 +1,28 @@
+/* app/Page.module.css */
+.main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 900; /* 무거운 폰트 웨이트 사용 */
+    color: #333;
+    text-align: center;
+}
+
+.description {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #666;
+}
+
+.slowImage {
+    /* 이미지 자체의 크기는 크지만, 표시되는 크기를 제한 */
+    /* 하지만 LCP 요소는 '렌더링된 크기' 기준이므로 이 이미지가 LCP가 됩니다. */
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 2rem 0;
+}
