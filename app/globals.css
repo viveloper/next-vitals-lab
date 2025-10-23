@@ -4,7 +4,7 @@
   - @import는 CSSOM 생성을 차단하여 페이지 로딩을 느리게 합니다.
   - 여러 개의 폰트 스타일을 로드합니다.
 */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700;900&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700;900&display=swap');*/
 
 :root {
   --background: #ffffff;
