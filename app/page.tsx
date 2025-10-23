@@ -1,8 +1,8 @@
 // app/page.tsx
-import HeavyComponent from './components/HeavyComponent';
 import CLSComponent from './components/CLSComponent';
 import styles from './Page.module.css';
 import Image from "next/image";
+import DynamicHeavyComponent from "@/app/components/DynamicHeavyComponent";
 
 export default function Home() {
     return (
@@ -41,7 +41,7 @@ export default function Home() {
             {/* 문제 3: TBT (Total Blocking Time) 유발
         - 렌더링 시 메인 스레드를 500ms간 차단하는 무거운 컴포넌트입니다.
       */}
-            <HeavyComponent/>
+            <DynamicHeavyComponent/>
 
             <div className={styles.grid}>
                 {/* ... (이하 생략) ... */}
