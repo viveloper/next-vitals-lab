@@ -2,6 +2,7 @@
 import HeavyComponent from './components/HeavyComponent';
 import CLSComponent from './components/CLSComponent';
 import styles from './Page.module.css';
+import Image from "next/image";
 
 export default function Home() {
     return (
@@ -22,10 +23,12 @@ export default function Home() {
         - 매우 큰 고해상도 이미지 (약 1.8MB)
         - priority 속성 없음
       */}
-            <img
+            <Image
                 src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=3868&auto=format&fit=crop"
                 alt="느린 이미지"
                 className={styles.slowImage}
+                width={3868}  // 원본 너비 제공
+                height={3094} // 원본 높이 제공
             />
 
             <p>
