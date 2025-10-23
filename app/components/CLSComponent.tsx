@@ -20,7 +20,12 @@ export default function CLSComponent() {
     }, []);
 
     if (!show) {
-        return null; // 처음에는 공간을 차지하지 않음
+        // 해결 1: CLS 방지를 위해 같은 사이즈의 placeholder를 보여줌
+        return <div style={{
+            height: '100px',
+            width: '100%',
+            margin: '1rem 0',
+        }}></div>
     }
 
     // 1초 뒤에 100px 높이의 배너가 렌더링됨
