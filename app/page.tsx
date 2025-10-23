@@ -29,6 +29,8 @@ export default function Home() {
                 className={styles.slowImage}
                 width={3868}  // 원본 너비 제공
                 height={3094} // 원본 높이 제공
+                priority
+                sizes="(max-width: 800px) 100vw, 800px"
             />
 
             <p>
