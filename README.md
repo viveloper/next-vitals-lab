@@ -1,3 +1,15 @@
+## Deep FE & Performance (Next.js)
+
+- **미션 1 (FE/성능): App Router 기반 Core Web Vitals 최적화 (1일)**
+
+    - **내용:** 일부러 느리게 만든 Next.js 페이지(LCP 유발 이미지, 무거운 폰트, CLS 유발 컴포넌트)를 준비
+
+    - **실무 능력:** `next/image`, `next/font`, `next/dynamic`을 사용한 최적화.
+
+    - **문제 해결:** Lighthouse 리포트를 90점 이상으로 개선. `Suspense`와 `Streaming`을 적용하여 TBT(Total Blocking Time) 개선.
+
+    - **이론:** Core Web Vitals, RSC와 스트리밍의 원리, 하이드레이션(Hydration) 비용.
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
